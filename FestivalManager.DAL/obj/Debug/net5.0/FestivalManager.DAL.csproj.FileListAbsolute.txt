@@ -1,0 +1,15 @@
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\FestivalManager.DAL.deps.json
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\FestivalManager.DAL.runtimeconfig.json
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\FestivalManager.DAL.runtimeconfig.dev.json
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\FestivalManager.DAL.dll
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\ref\FestivalManager.DAL.dll
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\bin\Debug\net5.0\FestivalManager.DAL.pdb
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.AssemblyInfoInputs.cache
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.AssemblyInfo.cs
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.csproj.CoreCompileInputs.cache
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.dll
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\ref\FestivalManager.DAL.dll
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.pdb
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.genruntimeconfig.cache
+C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.DAL\obj\Debug\net5.0\FestivalManager.DAL.csprojAssemblyReference.cache
