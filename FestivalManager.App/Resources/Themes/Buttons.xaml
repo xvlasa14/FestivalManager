@@ -1,0 +1,232 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <!-- BASIC BUTTON TEMPLATE -->
+    <Style BasedOn="{StaticResource {x:Type Button}}"
+           TargetType="{x:Type Button}"
+           x:Key="BasicButton">
+        <Style.Setters>
+            <Setter Property="FontSize"
+                    Value="14" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="Transparent">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="0" Color="{StaticResource ColorShadow}" BlurRadius="5"/>
+                            </Border.Effect>
+                            <Grid Background="{TemplateBinding Background}">
+                                <TextBlock Padding="10, 0, 10, 0"
+                                           HorizontalAlignment="Center"
+                                           FontFamily="{TemplateBinding FontFamily}"
+                                           FontSize="{TemplateBinding FontSize}"
+                                           VerticalAlignment="Center">
+                                    <ContentPresenter />
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+            <Setter Property="Background"
+                    Value="{StaticResource Secondary}" />
+            <Setter Property="Foreground"
+                    Value="{StaticResource LighterBase}" />
+            <Setter Property="BorderBrush"
+                    Value="Transparent" />
+            <Setter Property="FontFamily"
+                    Value="{StaticResource ButtonFontBold}" />
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource LightSecondary}" />
+                <Setter Property="Foreground"
+                        Value="{StaticResource DarkSecondary}" />
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect Color="{StaticResource LightShadow}"
+                                          BlurRadius="4"
+                                          ShadowDepth="1"
+                                          Opacity="0.8" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- MAIN MENU TEXT WITH ICON TEMPLATE-->
+    <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+           TargetType="{x:Type TextBlock}"
+           x:Key="ButtonText">
+        <Style.Setters>
+            <Setter Property="FontSize"
+                    Value="16" />
+            <Setter Property="FontFamily"
+                    Value="{StaticResource ButtonFont}" />
+            <Setter Property="Padding"
+                    Value="35, 0, 0, 0"></Setter>
+        </Style.Setters>
+    </Style>
+
+    <!-- MAIN MENU BUTTON TEMPLATE -->
+    <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
+           TargetType="{x:Type RadioButton}"
+           x:Key="MainMenuButton">
+
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid VerticalAlignment="Stretch"
+                              HorizontalAlignment="Stretch"
+                              Background="{TemplateBinding Background}">
+                            <Grid Margin="25, 0, 0, 0"
+                                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Left">
+                                <ContentPresenter />
+                            </Grid>
+
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground"
+                    Value="{StaticResource LightAccent}" />
+            <Setter Property="Background"
+                    Value="Transparent" />
+            <Setter Property="BorderThickness"
+                    Value="0" />
+            <Setter Property="Height"
+                    Value="50" />
+        </Style.Setters>
+
+        <Style.Triggers>
+            <!-- hover trigger -->
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource LightAccent}" />
+                <Setter Property="Foreground"
+                        Value="{StaticResource Secondary}"/>
+                <Setter Property="Cursor" Value="Hand"/>
+            </Trigger>
+
+            <!-- clicked trigger -->
+            <Trigger Property="IsChecked"
+                     Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource DarkAccent}" />
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="RadioButton">
+
+                            <Grid VerticalAlignment="Stretch"
+                                  HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="10*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Rectangle Fill="{StaticResource DarkAccent}" />
+                                <Rectangle Grid.Column="1"
+                                           Fill="{StaticResource LighterBase}" />
+                                <ContentPresenter Grid.Column="1"
+                                                  Margin="15, 0, 10, 0"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Center" />
+                            </Grid>
+                        </ControlTemplate>
+
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- TOGGLE MENU BUTTON TEMPLATE -->
+    <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
+           TargetType="{x:Type ToggleButton}"
+           x:Key="FlatToggleButton">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid Background="{TemplateBinding Background}"
+                              Width="30"
+                              Height="30"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Right"
+                              Margin="15, 0, 15, 15">
+                            <ContentPresenter />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background"
+                    Value="{StaticResource LightAccent}" />
+            <Setter Property="Foreground"
+                    Value="{StaticResource DarkAccent}" />
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"/>
+            </Trigger>
+        </Style.Triggers>
+
+
+
+    </Style>
+
+    <!-- CONTROL BUTTON TEMPLATE -->
+    <Style BasedOn="{StaticResource {x:Type Button}}"
+           TargetType="{x:Type Button}"
+           x:Key="ControlButton">
+
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="Transparent">
+                            <Grid VerticalAlignment="Stretch"
+                                  HorizontalAlignment="Stretch"
+                                  Background="{TemplateBinding Background}">
+                                <ContentPresenter />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background"
+                    Value="{StaticResource Secondary}" />
+            <Setter Property="VerticalAlignment"
+                    Value="Stretch" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Stretch" />
+            <Setter Property="BorderThickness"
+                    Value="0" />
+            <Setter Property="Foreground"
+                    Value="{StaticResource Base}" />
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource Primary}" />
+            </Trigger>
+            <Trigger Property="IsPressed"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource LightAccent}"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

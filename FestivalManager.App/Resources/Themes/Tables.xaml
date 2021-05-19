@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- BASE DATAGRID TEMPLATE -->
+    <Style TargetType="DataGrid"
+           BasedOn="{StaticResource MaterialDesignDataGrid}">
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="10"
+                                  ShadowDepth="1"
+                                  Direction="270"
+                                  Color="{StaticResource LightShadow}" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="CanUserReorderColumns"
+                Value="True" />
+        <Setter Property="IsReadOnly"
+                Value="True" />
+    </Style>
+
+    <!-- DATAGRID COLUMN HEADERS -->
+    <Style TargetType="DataGridColumnHeader"
+           BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+        <Style.Setters>
+            <Setter Property="Foreground"
+                    Value="{StaticResource Base}" />
+            <Setter Property="Padding"
+                    Value="30 0 0 0 " />
+            <Setter Property="FontSize"
+                    Value="15" />
+            <Setter Property="Height"
+                    Value="40" />
+            <Setter Property="FontWeight"
+                    Value="Medium" />
+            <Setter Property="FontFamily"
+                    Value="{StaticResource ButtonFont}" />
+            <Setter Property="VerticalAlignment"
+                    Value="Stretch" />
+            <Setter Property="Background"
+                    Value="#59366C" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Stretch" />
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource UltraLightAccent}"/>
+                <Setter Property="Background" Value="{StaticResource Secondary}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- DATAGRID ROW -->
+    <Style TargetType="DataGridRow"
+           BasedOn="{StaticResource MaterialDesignDataGridRow}">
+        <Style.Setters>
+            <Setter Property="Background"
+                    Value="White" />
+            <Setter Property="Foreground"
+                    Value="{StaticResource DarkSecondary}" />
+            <Setter Property="FontSize"
+                    Value="13" />
+            <Setter Property="FontFamily"
+                    Value="{StaticResource TextFont}" />
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource LighterBase}" />
+                <Setter Property="Cursor" Value="Hand"/>
+            </Trigger>
+            <Trigger Property="IsSelected"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource LighterBase}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- DATAGRID CELL TEMPLATE -->
+    <Style BasedOn="{StaticResource MaterialDesignDataGridCell}"
+           TargetType="DataGridCell">
+        <Style.Triggers>
+            <Trigger Property="IsSelected"
+                     Value="True">
+                <Setter Property="BorderThickness"
+                        Value="0" />
+                <Setter Property="Background"
+                        Value="{StaticResource LightAccent}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

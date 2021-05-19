@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="Primary"
+                     Color="#3C1053" />
+    <SolidColorBrush x:Key="Secondary"
+                     Color="#b34f82" />
+    <SolidColorBrush x:Key="DarkSecondary"
+                     Color="#802855" />
+    <SolidColorBrush x:Key="LightSecondary"
+                     Color="#EAB1C2"/>
+    <SolidColorBrush x:Key="LightAccent"
+                     Color="#edc5d9" />
+    <SolidColorBrush x:Key="UltraLightAccent"
+                     Color="#DAC2CE" />
+    <SolidColorBrush x:Key="DarkAccent"
+                     Color="#5d215e" />
+    <SolidColorBrush x:Key="Pop"
+                     Color="#DF6589" />
+    <SolidColorBrush x:Key="Base"
+                     Color="#EDEDED" />
+    <SolidColorBrush x:Key="Dusty"
+                     Color="#EBD9DE"/>
+    <SolidColorBrush x:Key="LighterBase"
+                     Color="#F2F2F2" />
+
+    <Color x:Key="LightShadow">#EDEDED</Color>
+    <Color x:Key="ColorShadow">#DAC2CE</Color>
+    <Color x:Key="PopOnly">#DF6589</Color>
+    <Color x:Key="Dark">#5d215e</Color>
+
+    <LinearGradientBrush x:Key="Gradient"
+                         StartPoint="0,0"
+                         EndPoint="1,1">
+        <GradientStop Color="#3C1053"
+                      Offset="0.0" />
+        <GradientStop Color="#DF6589"
+                      Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonGradient"
+                         StartPoint="0,0"
+                         EndPoint="1,1">
+        <GradientStop Color="#3C1053"
+                      Offset="0.0" />
+        <GradientStop Color="#b34f82"
+                      Offset="1.0" />
+    </LinearGradientBrush>
+
+</ResourceDictionary>
+    
+    <!-- 
+
+    -->

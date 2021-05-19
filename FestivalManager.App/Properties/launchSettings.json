@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FestivalManager.App": {
+      "commandName": "Project"
+    },
+    "FestivalDebug": {
+      "commandName": "Project"
+    }
+  }
+}
