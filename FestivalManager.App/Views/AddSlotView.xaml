@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="FestivalManager.App.Views.AddSlotView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewmodels="clr-namespace:FestivalManager.App.ViewModels"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             d:DataContext="{d:DesignInstance Type=viewmodels:AddSlotViewModel}"
+             mc:Ignorable="d"
+             d:DesignHeight="740"
+             d:DesignWidth="829"
+             Background="{StaticResource Base}">
+    <!-- main grid -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <!-- title -->
+        <TextBlock Grid.Row="0"
+                   Text="ADD NEW SLOT"
+                   Style="{StaticResource SectionHeader}" />
+
+        <!-- body -->
+        <Grid Grid.Row="1"
+              Margin="20 0"
+              HorizontalAlignment="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <!-- start time -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Start time"
+                               Style="{StaticResource TitleBlock}" />
+                    <materialDesign:TimePicker Style="{StaticResource MyTimePicker}"
+                                               SelectedTime="{Binding Path=Model.StartTime, UpdateSourceTrigger=PropertyChanged}">
+                    </materialDesign:TimePicker>
+                    <TextBlock Style="{StaticResource ToolTip}"
+                               Text="Select time by clicking on clock icon!" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Start date"
+                               Style="{StaticResource TitleBlock}" />
+                    <DatePicker Style="{StaticResource MyDatePicker}" 
+                                SelectedDate="{Binding Path=StartDay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <TextBlock Style="{StaticResource ToolTip}"
+                               Text="Select date by clicking on clock icon!" />
+
+
+                </StackPanel>
+
+            </Grid>
+                
+
+                <!-- end time -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Margin="0 30"
+                            Grid.Column="0">
+                    <TextBlock Text="End time"
+                               Style="{StaticResource TitleBlock}" />
+                    <materialDesign:TimePicker Style="{StaticResource MyTimePicker}"
+                                               SelectedTime="{Binding Path=Model.EndTime, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock Style="{StaticResource ToolTip}"
+                               Text="Select time by clicking on clock icon!" />
+                </StackPanel>
+
+                <StackPanel Margin="0 30"
+                            Grid.Column="2">
+                    <TextBlock Text="End time"
+                               Style="{StaticResource TitleBlock}" />
+                    <DatePicker Style="{StaticResource MyDatePicker}"
+                                SelectedDate="{Binding Path=EndDay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Style="{StaticResource ToolTip}"
+                               Text="Select date by clicking on clock icon!" />
+                </StackPanel>
+
+            </Grid>
+           
+
+                <!-- band -->
+            <StackPanel Margin="0 30"
+                        Grid.Row="2" Style="{StaticResource TextBlockBase}" HorizontalAlignment="Center">
+                    <TextBlock Text="Band"
+                               Style="{StaticResource TitleBlock}" />
+                    <ComboBox Style="{StaticResource MyCombo}"
+                              ItemsSource="{Binding Bands}"
+                              SelectedItem="{Binding SelectedBand}"
+                              DisplayMemberPath="Name" />
+                </StackPanel>
+
+                <!-- stage -->
+            <StackPanel Margin="0 30"
+                        Grid.Row="3"
+                        HorizontalAlignment="Center" Style="{StaticResource TextBlockBase}">
+                    <TextBlock Text="Stage"
+                               Style="{StaticResource TitleBlock}" />
+                    <ComboBox Style="{StaticResource MyCombo}"
+                              ItemsSource="{Binding Stages}"
+                              SelectedItem="{Binding SelectedStage}"
+                              DisplayMemberPath="Name" />
+                </StackPanel>
+
+
+
+        </Grid>
+
+        <!-- buttons -->
+        <Grid Grid.Row="2"
+              HorizontalAlignment="Center"
+              Width="300">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Content="CONFIRM"
+                    Style="{StaticResource BasicButton}"
+                    Command="{Binding AddSlotCommand}" />
+            <Button Grid.Column="1"
+                    Content="CANCEL"
+                    Style="{StaticResource BasicButton}"
+                    Command="{Binding CancelCommand}" />
+        </Grid>
+
+    </Grid>
+</UserControl>

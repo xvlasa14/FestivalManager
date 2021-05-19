@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="FestivalManager.App.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             Background="{StaticResource Base}"
+             d:DesignHeight="740"
+             d:DesignWidth="829">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <!-- header grid -->
+        <Grid Grid.Row="0"
+              Margin="20, 20, 20, 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- main title -->
+            <TextBlock Grid.Column="0"
+                       Text="INTRODUCTION"
+                       FontSize="30"
+                       FontFamily="{StaticResource TitleFont}"
+                       Foreground="{StaticResource DarkSecondary}"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom" />
+        </Grid>
+
+        <!-- body -->
+        <Grid Margin="40 0"
+              Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition  Height="2*" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0"
+                        Orientation="Vertical">
+                <TextBlock Style="{StaticResource IntroTitle}"
+                           Text="What is this?" />
+                <TextBlock Style="{StaticResource IntroText}"
+                           Text="This is a simple festival manager. App allows you to create program, view each band's profile and manage time slots for each performance. All of your data will be stored locally. &#x0d;&#x0a;&#x0d;&#x0a;This app was developed as part of a C# course. Members of our team include: &#x0d;&#x0a;" />
+                <TextBlock Style="{StaticResource IntroImportant}"
+                           Text="Přikryl, Stanislav (xprikr33)&#x0d;&#x0a;" />
+                <TextBlock Style="{StaticResource IntroImportant}"
+                           Text="Vlasáková, Nela (xvlasa14)&#x0d;&#x0a;" />
+                <TextBlock Style="{StaticResource IntroImportant}"
+                           Text="Gasta, Evžen (xgasta00)&#x0d;&#x0a;" />
+                <TextBlock Style="{StaticResource IntroImportant}"
+                           Text="Vlasák, David (xvlasa16)&#x0d;&#x0a;" />
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1"
+                        Orientation="Vertical">
+                <TextBlock Style="{StaticResource IntroTitle}"
+                           Text="App functionality:" />
+                <StackPanel Orientation="Horizontal">
+                    <Border Style="{StaticResource IntroTile}">
+                        <StackPanel Orientation="Vertical"
+                                    VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource IntroImportant}"
+                                       Padding="10"
+                                       Text="BAND MANAGEMENT"
+                                       TextAlignment="Center" />
+                            <TextBlock Style="{StaticResource IntroText}"
+                                       Padding="20 0"
+                                       TextAlignment="Center"
+                                       Text="Add band to your festival. You can edit or remove bands as you wish!" />
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource IntroTile}">
+                        <StackPanel Orientation="Vertical"
+                                    VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource IntroImportant}"
+                                       Padding="10"
+                                       Text="STAGE MANAGEMENT"
+                                       TextAlignment="Center" />
+                            <TextBlock Style="{StaticResource IntroText}"
+                                       Padding="20 0"
+                                       TextAlignment="Center"
+                                       Text="Add stage to your festival. Include location description and picture. Edit as you wish!" />
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource IntroTile}">
+                        <StackPanel Orientation="Vertical"
+                                    VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource IntroImportant}"
+                                       Padding="10"
+                                       Text="CREATE PROGRAM"
+                                       TextAlignment="Center" />
+                            <TextBlock Style="{StaticResource IntroText}"
+                                       Padding="20 0"
+                                       TextAlignment="Center"
+                                       Text="Combine your bands and stages and create program for your festival!" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="2"
+                        Orientation="Vertical">
+                <TextBlock Style="{StaticResource IntroTitle}"
+                           Text="Credits:" />
+                <TextBlock Style="{StaticResource IntroText}">
+                    <TextBlock Text="Our app icon was made by" />
+                    <Hyperlink NavigateUri="https://www.freepik.com">Freepik</Hyperlink>
+                    <TextBlock Text="and was downloaded from" />
+                    <Hyperlink NavigateUri="https://www.flaticon.com/">flaticon.com</Hyperlink>
+                    <TextBlock Text="." />
+                </TextBlock>
+            </StackPanel>
+
+
+
+
+        </Grid>
+
+
+
+
+
+    </Grid>
+</UserControl>

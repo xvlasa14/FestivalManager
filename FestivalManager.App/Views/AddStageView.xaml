@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="FestivalManager.App.Views.AddStageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:FestivalManager.App.ViewModels"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             Background="{StaticResource Base}"
+             d:DesignHeight="740"
+             d:DesignWidth="829">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1"
+              Margin=" 20 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="10*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0"
+                        Margin="20"
+                        Orientation="Vertical">
+                <StackPanel Style="{StaticResource TextBlockBase}">
+                    <TextBlock Text="Stage name"
+                               Style="{StaticResource TitleBlock}" />
+                    <Border Style="{StaticResource FieldBase}">
+                        <TextBox Style="{StaticResource TextField}" MaxLength="35"
+                                 Text="{Binding Model.Name, UpdateSourceTrigger=PropertyChanged}" />
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Style="{StaticResource TextBlockBase}">
+                    <TextBlock Text="Location description:"
+                               Style="{StaticResource TitleBlock}" />
+                    <Border Style="{StaticResource FieldBase}">
+                        <TextBox Style="{StaticResource TextField}"
+                                 VerticalContentAlignment="Top"
+                                 VerticalAlignment="Top"
+                                 Padding="10 10 10 0"
+                                 Text="{Binding Model.Info, UpdateSourceTrigger=PropertyChanged}"
+                                 Height="300"
+                                 MaxLength="500" />
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                <Border Style="{StaticResource ImagePlaceholder}">
+                    <Image Source="{Binding Model.Image, TargetNullValue={x:Null}}" />
+                </Border>
+                
+                <StackPanel Style="{StaticResource TextBlockBase}">
+                    <TextBlock Text="Image URL"
+                               Style="{StaticResource TitleBlock}" />
+                    <Border MaxWidth="500"
+                            Style="{StaticResource FieldBase}">
+                        <TextBox  Style="{StaticResource TextField}"
+                                  Text="{Binding Model.Image, UpdateSourceTrigger=PropertyChanged}"
+                                  MaxLength="0" />
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+
+        <TextBlock Grid.Row="0"
+                   Text="ADD NEW STAGE"
+                   Style="{StaticResource SectionHeader}" />
+
+
+
+
+
+
+        <Grid Grid.Row="2"
+              HorizontalAlignment="Center"
+              Width="300">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Style="{StaticResource BasicButton}"
+                    Command="{Binding AddStageCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="CheckBold" />
+                    <TextBlock Text="CONFIRM" />
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="1"
+                    Style="{StaticResource BasicButton}"
+                    Command="{Binding CancelCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="CancelCircle" />
+                    <TextBlock Text="CANCEL" />
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>
