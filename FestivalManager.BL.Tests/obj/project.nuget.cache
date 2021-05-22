@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PGbxta4/LuRS0OjY/JXzEfSg7Po7xzh6c+X9VEtAP717MhqF/I9hmOhKBJEG5DLJZ2sV34GjbTlQ3EpGxXVMZA==",
+  "dgSpecHash": "srJUAJTzIOuje65/jYXf+iFQGzjZnE5T/8XDThiz6lDcnQAu/jgi4PQMs/WVxdMumD5BriXIHuZIRoFdf4OPbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
+  "projectFilePath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nelvl\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\nelvl\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

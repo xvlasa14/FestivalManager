@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {}
+    "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {
+    "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
+        "projectUniqueName": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
         "projectName": "FestivalManager.BL",
-        "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
+        "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
         "packagesPath": "C:\\Users\\nelvl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\obj\\",
+        "outputPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj": {
-                "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj"
+              "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj": {
+                "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj": {
+    "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
         "projectName": "FestivalManager.DAL",
-        "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
+        "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
         "packagesPath": "C:\\Users\\nelvl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\obj\\",
+        "outputPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

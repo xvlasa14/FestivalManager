@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.App\obj\Debug\net5.0-windows\
+C:\Users\nelvl\OneDrive - Vysoké učení technické v Brně\school\ICS\FestivalManager\FestivalManager.App\obj\Debug\net5.0-windows\
 FestivalManager.App
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\nelvl\Documents\ICSproject\FestivalManager\FestivalManager.App\App.xaml
+C:\Users\nelvl\OneDrive - Vysoké učení technické v Brně\school\ICS\FestivalManager\FestivalManager.App\App.xaml
 18382943254
 1-1454923603
 61-1103011564
-2491356971163
+249-1183611778
 Resources\Fonts\Fonts.xaml;Resources\Themes\Buttons.xaml;Resources\Themes\Colors.xaml;Resources\Themes\MiscTemplates.xaml;Resources\Themes\SearchBox.xaml;Resources\Themes\Tables.xaml;Resources\Themes\TextFields.xaml;Views\AddBandView.xaml;Views\AddSlotView.xaml;Views\AddStageView.xaml;Views\BandDetailView.xaml;Views\BandsView.xaml;Views\HomeView.xaml;Views\MainWindow.xaml;Views\ProgramView.xaml;Views\SlotDetailView.xaml;Views\StageDetailView.xaml;Views\StagesView.xaml;
 
-True
+False
 

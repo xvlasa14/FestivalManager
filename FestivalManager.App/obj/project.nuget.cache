@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SiWzAL02cqAV3OF6tHNlOLIZ7bey9JSgt1Wj6S48m7xcbhAY+84xrENNsSCkmv7iCVkX0c4UNbu+l3ahhytBdA==",
+  "dgSpecHash": "t/w5wqyd5bEKd/ZiIBWmzbu+IAqcGkuL3YCEfOLDhAx4XFxcNwQBZ1pLQaYuSxA3L0NfJWUf/QxBjTPsH4NN/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.App\\FestivalManager.App.csproj",
+  "projectFilePath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.App\\FestivalManager.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nelvl\\.nuget\\packages\\fody\\6.4.0\\fody.6.4.0.nupkg.sha512",
     "C:\\Users\\nelvl\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512",

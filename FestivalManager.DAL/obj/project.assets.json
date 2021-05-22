@@ -5831,11 +5831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
       "projectName": "FestivalManager.DAL",
-      "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
+      "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\FestivalManager.DAL.csproj",
       "packagesPath": "C:\\Users\\nelvl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL\\obj\\",
+      "outputPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

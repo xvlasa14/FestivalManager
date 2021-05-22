@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8S1AGT1GXp5eAD568ygHjz/3EAVYSgDwnE6CLXMsNgItw7S6YBpTv3Uct4e8RKOLRQWtRGXChfbiwvtEeOXeVg==",
+  "dgSpecHash": "2JIWnA7M5x6MlauAeJCbjFvfNr4yt+/L+wC97agyxorIe/DaJ1rlvI62FL6wo6Kk8DlbqPE1qrarYouChiD8Hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
+  "projectFilePath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nelvl\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nelvl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -8125,11 +8125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
       "projectName": "FestivalManager.BL.Tests",
-      "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
+      "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL.Tests\\FestivalManager.BL.Tests.csproj",
       "packagesPath": "C:\\Users\\nelvl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL.Tests\\obj\\",
+      "outputPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8150,11 +8150,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {
-              "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj"
+            "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj": {
+              "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.BL\\FestivalManager.BL.csproj"
             },
-            "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL.Tests\\FestivalManager.DAL.Tests.csproj": {
-              "projectPath": "C:\\Users\\nelvl\\Documents\\ICSproject\\FestivalManager\\FestivalManager.DAL.Tests\\FestivalManager.DAL.Tests.csproj"
+            "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL.Tests\\FestivalManager.DAL.Tests.csproj": {
+              "projectPath": "C:\\Users\\nelvl\\OneDrive - Vysoké učení technické v Brně\\school\\ICS\\FestivalManager\\FestivalManager.DAL.Tests\\FestivalManager.DAL.Tests.csproj"
             }
           }
         }
